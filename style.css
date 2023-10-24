@@ -2,21 +2,28 @@ html, body {
     margin: 0;
 }
 body {
-    background-color: #f1f1f1;
+    background-color: #000000;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-.wrapper {
-    width: 1200px;
+.allpage {  
     display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+    width: auto;
+    /*background-color: aquamarine;*/
+   
+}
+.content-footer {  
+    display: flex;
+    flex-flow: column;
+    /*background-color: aquamarine;*/
+   
 }
 .main {
     display: flex;
     flex-flow: column;
-    width: 85%;
+    width: 100%;
 }
 .menu {
     width: 15%;
@@ -24,15 +31,162 @@ body {
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+    background-color: #B8D2E4;
+    min-height: 100px;
 }
 .content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
+    background-color: #B8D2E4;
+    /*margin: auto;*/
+    min-height: 580px;
+    display: flex;
+    
 }
 .footer {
     background-color: rgb(99, 56, 240);
     min-height: 150px;
+}
+/*---------------------Customizado----------------------------*/
+
+.header img {
+    margin-left: 25px;
+    margin-top: 8px;
+}
+/*navigation bar */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* content */
+.content h1, h2{
+    font-family: Public Sans, sans-serif;
+    color: #156669;
+    padding: 130px 100px 0px 100px;
+}
+.content h1 {
+    font-size: 55px;
+    margin: auto;
+}
+.content h2 {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 10px;
+}
+.content img {
+    margin: auto;
+    width: 450px;
+}
+.content button{
+    margin: 30px 0px 0px 100px;
+    width: 200px;
+    height: 50px;
+    background-color: #156669;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Public Sans, sans-serif;
+    cursor: pointer;
+}
+/*about us*/
+.page2 {
+    display: flex;
+    background-color: #FBF6F1;
+    min-height: 500px;
+}
+.page2 h1 {
+    font-size: 40px;
+    font-family: Public Sans, sans-serif;
+    padding-top: 80px;
+    color: #156669;
+}
+.about-us {
+    text-align: center;
+    background-color: #FBF6F1;
+    width: 50%;
+}
+
+.about-us p {
+    color: #156669;
+    margin: 0px 150px 0px 100px;
+    font-family: Public Sans, sans-serif;
+    align-items: center;
+    text-align: justify;
+    font-size: 15px;
+}
+.horarios{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    background-color: #FBF6F1;
+    width: 50%;
+}
+.horarios table {
+    margin: auto;
+    font-family: Public Sans, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    color: #156669;
+    align-items: center;
+    width: 250px;
+}
+/*contact us*/
+.page3 {
+    display: flex;
+    background-color: #B8D2E4;
+    min-height: 900px;
+}
+.page3 img {
+    margin: auto;
+    width: 600px;
+    height: 720px;
+}
+.form {
+    display: flex;
+    flex-flow: column;
+    background-color:#156669;
+    width: 600px;
+    height: 750px;
+    margin: auto;
+    border-radius: 3%;
+}
+.form h1 {
+    font-size: 40px;
+    font-family: Public Sans, sans-serif;
+    padding-top: 20px;
+    color: #FBF6F1;
+    text-align: center;
+}
+.form fieldset {
+    border: none;
+    margin: 0px 50px 0px 50px;
+}
+label{
+    width: 80px;
+    text-align: left;
+    display: inline-block;
+    padding: 1px 25px 8px 0px;
+}
+.form legend {
+    font-size: 20px;
+    font-family: Public Sans, sans-serif;
+    color: #FBF6F1;
+}
+.form button{
+    margin: 30px 60px 50px 60px;
+    width: 200px;
+    height: 50px;
+    background-color: #FBF6F1;
+    color: #156669;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Public Sans, sans-serif;
+    cursor: pointer;
+}
+.botao{ 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
 }

@@ -1,42 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template - Utilizar como modelo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div class="wrapper">
+    <div class="allpage">
         <div class="menu">
             <!-- Aqui vai o seu menu -->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre a Clínica</a></li>
-                <li><a href="#">Nossos Serviços</a></li>
-                <li><a href="#">Horários de Atendimento</a></li>
-                <li><a href="#">Agende sua consulta</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-us">Sobre a Clínica</a></li>
+                <!--<li><a href="#">Nossos Serviços</a></li> -->
+                <li><a href="#horarios">Horários de Atendimento</a></li>
+                <li><a href="#form">Agende sua consulta</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </div>
-
+        <div class="content-footer">
         <div class="main">
             <div class="header">
-                Header
                 <!-- Aqui vai o seu header -->
+                <img src="img/logo.png" alt="logo" width="250px">
             </div>
-    
+
             <div class="content">
-                Content
                 <!-- Aqui vai o seu conteúdo -->
+                <div class="content-title">
+                    <h1>Sua saúde,<br>nossa missão</h1>
+                    <h2>Atendendendo todas as duas necessidades</h2>
+                    <button class="btn">Agende sua consulta</button>
+                </div>
+                <img src="img/homeimage.png" alt="medico" width="300px">
             </div>
-    
-            <div class="footer">
-                Footer
-                <!-- Aqui vai o seu rodapé -->
+            <div class="page2">
+                <div class="about-us">
+                    <h1>Sobre a Clínica</h1>
+                    <p>O objetivo contínuo de nossa clínica médica é fornecer atendimento médico primário abrangente.
+                        Quando
+                        você tem necessidades de saúde, precisa recorrer a um médico que ouve e responde... um
+                        profissional
+                        experiente que conhece a área e pode diagnosticar e tratar efetivamente suas necessidades, uma
+                        equipe amigável que o aconselha sobre as melhores maneiras de manter e melhorar sua saúde. Nossa
+                        equipe de profissionais qualificados atende a todas essas necessidades. Além disso, você se
+                        beneficia de uma equipe dedicada de profissionais treinados que dão a você o atendimento
+                        individualizado que você merece.</p>
+                </div>
+                <div class="horarios">
+                    <h1>Confira nossos horários <br> de atendimento</h1>
+                    <table summary="horários de atendimento" align="center">
+                        <tr>
+                            <td>Segunda</td>
+                            <td>08:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça</td>
+                            <td>08:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>08:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta</td>
+                            <td>08:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>08:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>08:00 - 12:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="page3">
+                <img src="img/imgpage3.png" alt="atendimento">
+                <div class="form">
+                    <h1>Agende sua consulta</h1>
+                    <form>
+                    <fieldset> <!--fieldset é utilizado para agrupar campos de formulário-->
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome:</label><input type="text"/> <br>
+                        <label>E-mail:</label><input type="text" /> <br>
+                        <label>CPF</label><input type="text" /> <br>
+                        <label>Telefone:</label><input type="text" /> <br>
+                    </fieldset>
+                    <fieldset> <!--fieldset é utilizado para agrupar campos de formulário-->
+                        <legend>Endereço</legend>
+                        <label>Endereço:</label><input type="text" /> <br>
+                        <label>Número:</label><input style="width: 30px" type="text" width="10" /> <br>
+                        <label>Bairro:</label><input type="text" /> <br>
+                        <label>Cidade/UF:</label><input type="text" /> <br>
+                        <label>CEP:</label><input type="text" /> <br>
+                    </fieldset>
+                    <fieldset> <!--fieldset é utilizado para agrupar campos de formulário-->
+                        <legend>Agendamento</legend>
+                        <label>Especialidade:</label>
+                        <select name="Especialidade" id="especialidade"> <br>
+                            <option value="0">Selecione</option>
+                            <option value="1">Cardiologia</option>
+                            <option value="2">Clínico Geral</option>
+                            <option value="3">Dermatologia</option>
+                            <option value="4">Endocrinologia</option>
+                            <option value="5">Gastroenterologia</option>
+                            <option value="6">Ginecologia</option>
+                            <option value="7">Neurologia</option>
+                            <option value="8">Oftalmologia</option>
+                            <option value="9">Ortopedia</option>
+                            <option value="10">Otorrinolaringologia</option>
+                            <option value="11">Pediatria</option>
+                            <option value="12">Pneumologia</option>
+                            <option value="13">Psiquiatria</option>
+                        </select> <br>
+                        <label>Convênio:</label> 
+                        <select name="convenio" id="convenio"> 
+                            <option value="0">Selecione</option>
+                            <option value="1">Unimed</option>
+                            <option value="2">Bradesco Saúde</option>
+                            <option value="3">Amil</option>
+                            <option value="4">SulAmérica</option>
+                            <option value="5">Outros</option>
+                        </select> <br>
+                        <label>Horário:</label>
+                        <select name="horarios" id="horarios">
+                            <option value="0">Selecione</option>
+                            <option value="1">08:00</option>
+                            <option value="2">09:00</option>
+                            <option value="3">10:00</option>
+                            <option value="4">11:00</option>
+                            <option value="5">12:00</option>
+                            <option value="6">13:00</option>
+                            <option value="7">14:00</option>
+                            <option value="8">15:00</option>
+                            <option value="9">16:00</option>
+                            <option value="10">17:00</option>
+                            <option value="11">18:00</option>
+                        </select> <br>
+                        <label>Data:</label><input type="date" /> <br>
+                        <label>Requisição Médica</label><input type="file" />
+                    </fieldset>
+                    <div class="botao">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="footer">
+            Footer
+            <!-- Aqui vai o seu rodapé -->
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
 </body>
+
 </html>
